@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 class LinkedListopr{
     private static final Logger log = Logger.getLogger("InfoLogging");
-    node head;
-  class node{
+    Node head;
+  class Node{
      int data;
-     node next;
-       node(int value){
+     Node next;
+       Node(int value){
             data = value;
             next = null;
          }
@@ -19,8 +19,8 @@ LinkedListopr(){
 }
 void insert(int data)
 {
-    node n1 = new node(data);
-    node temp = head;
+    Node n1 = new Node(data);
+    Node temp = head;
     if(head == null){
         head = n1;
     }
@@ -32,8 +32,8 @@ void insert(int data)
 }
 }
 void remove(){
-    node temp = head;
-    node prev=temp;
+    Node temp = head;
+    Node prev=temp;
     while(temp.next!=null){
         prev=temp;
         temp = temp.next;
@@ -41,7 +41,7 @@ void remove(){
     prev.next=temp.next;
 }
     void display(){
-        node temp = head;
+        Node temp = head;
         while(temp!=null)
         {
             String print = temp.data+"";
