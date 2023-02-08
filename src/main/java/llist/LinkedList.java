@@ -49,7 +49,8 @@ void remove(){
             
             temp = temp.next;
         }
-        log.info(print.toString());
+        String res =""+print;
+        log.info(res);
         print.delete(0,print.length());
     }
 }
