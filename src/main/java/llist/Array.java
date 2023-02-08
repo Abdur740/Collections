@@ -40,7 +40,8 @@ class DynamicArray{
         for(int i = 0; i < arr.length; i++){
             print.append(" "+arr[i]+" ");
         }
-        log.info(print.toString());
+        String res =""+print;
+        log.info(res);
         print.delete(0, print.length());
     }
 
