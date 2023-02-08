@@ -14,7 +14,7 @@ class DynamicArray{
     
 
     void increase(){
-        int temp[] = new int[size+1];
+        int[] temp = new int[size+1];
         for(int i = 0; i < size; i++){
             temp[i] = arr[i];
         }
@@ -28,7 +28,7 @@ class DynamicArray{
     }
 
     void remove(){
-        int temp1[] = new int[size-1];
+        int[] temp1 = new int[size-1];
         for(int i = 0; i < size-1; i++){
             temp1[i] = arr[i];
         }
