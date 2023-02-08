@@ -31,21 +31,25 @@ public class ArrayLst{
                 // print element at a index position
                 log.info("Enter index position: ");
                 int index2 = sc.nextInt();
-                log.info(""+list.get(index2));
+                String print1 = ""+list.get(index2);
+                log.info(print1);
                 break;
                 case 4:
                 log.info("Enter index position: ");
                 int index3 = sc.nextInt();
                 list.remove(index3);
-                log.info(""+list);
+                String print2 =""+list;
+                log.info(print2);
                 break;
                 case 5:
                 //print all elements
-                if(list.size() == 0){
+                if(list.isEmpty()){
                     log.info("Array list is empty.\n");
                 }else{
-                log.info("Array list: "+list);
-                log.info("Size of the array: "+list.size());
+                    String print3 = "Array list: "+list;
+                    String print4 ="Size of the array: "+list.size();
+                log.info(print3);
+                log.info(print4);
                  }
                 break;
                 case 6:
