@@ -10,7 +10,7 @@ class DynamicArray{
     DynamicArray(){
       size = 0;
     }
-    int arr[];
+    int[] arr={};
     
 
     void increase(){
