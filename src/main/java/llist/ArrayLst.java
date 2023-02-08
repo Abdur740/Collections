@@ -21,7 +21,7 @@ public class ArrayLst{
                 break;
                 case 2:
                 // insert at a index position
-                log.info("Enter position: ");
+                log.info("Enter position index:  ");
                 int index1 = sc.nextInt();
                 log.info("Enter value: ");
                 int value1 = sc.nextInt();
@@ -29,7 +29,7 @@ public class ArrayLst{
                 break;
                 case 3:
                 // print element at a index position
-                log.info("Enter position: ");
+                log.info("Enter index postion: ");
                 int index2 = sc.nextInt();
                 String print1 = ""+list.get(index2);
                 log.info(print1);
